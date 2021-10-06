@@ -1,21 +1,29 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import Custombutton from './Components/custombutton';
+
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <Text style = {styles.title}>DaiGo</Text>
+      <Custombutton/>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: 'black',
+  },
+
+  title: {
+    fontSize: 62,
+    fontWeight: 'bold',
+    color: '#D303FC',
+    marginTop: 375,
+    flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'center',
+    textAlign: 'center'
   },
 });
