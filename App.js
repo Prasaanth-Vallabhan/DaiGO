@@ -1,29 +1,19 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import Custombutton from './Components/custombutton';
+import { createStackNavigator } from "react-navigation-stack";
+import { createAppContainer } from "react-navigation";
+import HomeScreen from "./HomeScreen";
 
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text style = {styles.title}>DaiGo</Text>
-      <Custombutton/>
-    </View>
-  );
-}
-
-const styles = StyleSheet.create({
-  container: {
-    backgroundColor: 'black',
+const navigator = createStackNavigator(
+  {
+    home: HomeScreen
   },
+  {
+    initialRouteName: 'home',
+    defaultNavigationOptions: {
+      title: ''
+    }
+  }
+);
 
-  title: {
-    fontSize: 62,
-    fontWeight: 'bold',
-    color: '#D303FC',
-    marginTop: 375,
-    flexDirection: 'row',
-    alignItems: 'center',
-    textAlign: 'center'
-  },
-});
+
+export default createAppContainer(navigator);

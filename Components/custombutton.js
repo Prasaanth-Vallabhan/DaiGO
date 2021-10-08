@@ -7,7 +7,7 @@ const Custombutton = () => {
     return(
         <View style = { styles.button }>
             <Text style = 
-            {{ fontSize: 24, color: 'white', fontWeight: 'bold' }}
+            {{ fontSize: 20, color: 'white', fontWeight: 'bold' }}
             >Get Started
             </Text>
         </View>
@@ -18,13 +18,14 @@ const Custombutton = () => {
 const styles = StyleSheet.create({
     button: {
         backgroundColor: '#D303FC',
-        marginTop: 225,
-        flexDirection: 'row',
-        justifyContent: 'center',
-        marginHorizontal: 119,
-        paddingVertical: 9,
-        borderRadius: 30,
-        marginBottom: 67
+        alignItems: 'center',
+        marginHorizontal: 110,
+        paddingVertical: 10,
+        paddingHorizontal: 15,
+        borderRadius: 25,
+        alignSelf: 'flex-end',
+        marginTop: '75%'
+        
 
     }
 })
