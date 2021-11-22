@@ -3,7 +3,7 @@ import { Text, View, StyleSheet } from 'react-native'
 
 
 
-const Custombutton = () => {
+const CustomButton = () => {
     return(
         <View style = { styles.button }>
             <Text style = 
@@ -31,4 +31,4 @@ const styles = StyleSheet.create({
 })
 
 
-export default Custombutton;
+export default CustomButton;
